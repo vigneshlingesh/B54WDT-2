@@ -1,0 +1,10 @@
+.image{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 50px;
+    shape-outside: margin-box;
+    border-radius: 20px;
+
+}

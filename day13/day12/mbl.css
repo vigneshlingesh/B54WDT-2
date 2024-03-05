@@ -1,0 +1,28 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    background-color: white;
+
+
+}
+
+header, main, footer{
+    padding: 20px;
+    text-align: center;
+}
+
+header{
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid black;
+    
+    
+}
+footer{
+    background-color: gray;
+    color: white;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

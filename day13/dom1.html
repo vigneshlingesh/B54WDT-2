@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM DEMO Cont</title>
+</head>
+<body>
+
+    <style>
+
+        .red{
+            color: red;
+        }
+    </style>
+
+<script>
+
+let header = document.createElement('h1');
+
+header.textContent ='hello world';
+// header.setAttribute('class', 'red');
+header.style.color= ('red');
+header.style.fontStyle ="italic";
+
+document.body.appendChild(header);
+
+</script>
+</body>
+</html>

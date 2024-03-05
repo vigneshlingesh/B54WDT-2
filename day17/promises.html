@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises and Promises state</title>
+</head>
+<body>
+    <h2>Promises and Promise state</h2>
+
+    <script>
+
+        // let promise = new Promise((resolve, reject) =>{
+        //     let randomNumber = Math.round(Math.random()*10);
+        //     console.log(`Generated random number is ${randomNumber}`);
+
+        //     if(randomNumber > 5){
+        //         setTimeout(()=>{
+        //             resolve();
+        //         }, 5000);
+        //     }else{
+        //         setTimeout(()=>
+        //         {
+        //             reject();
+        //         },5000);
+        //     }
+        // });
+
+        // console.log(promise);
+
+        // promise
+        // .then(() =>{
+
+        //     console.log('promise resolved');
+
+        // })
+        // .catch(() =>{
+
+        //     console.log('promise reject');
+        // })
+
+        // // print the promise final state
+        // setTimeout(() => {
+
+        //     console.log(promise);
+            
+        // }, 6000);
+
+
+        let promise = new Promise((resolve, reject) =>{
+           
+        //  reject(-5); 
+
+        resolve(5);
+            
+        });
+
+        promise
+        .then((result) =>{
+
+            console.log('promise resolved', result);
+
+        })
+        .catch((result) =>{
+
+            console.log('promise reject', result);
+        })
+
+        
+
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+
+}
+.container{
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+    display: flex;
+    flex-direction: column;
+}
+
+svg{
+    width: 30px;
+}
+.cart-btn{
+    outline: black;
+
+}
+
+.count{
+    text-decoration-color: white;
+    background-color: black ;
+}
+.title-menu{
+    justify-content: space-evenly;
+    color: black;
+
+}
+
+ul{
+    list-style: none;
+
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    
+}
+
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    
+}
+ul li ul.dropdown li{
+    display: block;
+   }
+   
+   ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+   }
+
+  
+
+header{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 3px solid red;
+}
+.card{
+    height: 100px;
+}
+.cartTab{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 25px;
+    height: 60px;
+    width: 100%;
+    border-radius: 50px;column-gap: 30px;
+}
+.btn{
+    outline: dark black;
+    
+}
+
+.sale{
+    background-color: black;
+    justify-content: space-between;
+    color: white;
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+}
+.spl-offer{
+text-decoration-style: dashed;
+}

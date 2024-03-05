@@ -1,0 +1,21 @@
+navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+.nav-link{
+        color: black;
+        border: 3px solid brown;
+        border-radius: 10px;
+        margin: 15px;
+        padding: 25px;
+        flex-grow: 2;
+        background-color: white;
+        
+
+}
+.nav-link:hover{
+    background-color: red;
+}

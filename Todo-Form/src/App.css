@@ -1,0 +1,87 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.App{
+  text-align: center;
+}
+
+h3{
+  color: green;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.TodoForm{
+
+display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+ justify-content: space-around;
+  padding: 20px;
+}
+
+.todo-input-name{
+  outline: none;
+  background: none;
+  border: 1px solid green;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 250px;
+  color: black;
+  align-items: center;
+  
+ 
+}
+
+.todo-input-description{
+  outline: none;
+  background: none;
+  border: 1px solid green;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 250px;
+  color: black;
+  align-items: center;
+}
+
+.todo-btn{
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+.Todo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 25px;
+  background: rgb(120, 172, 120);
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+  width: 200px;
+  height: auto;
+}
+
+button{
+  align-items: end;
+  padding: 8.5;
+  margin: 6.5px;
+  border-radius: 10px ;
+}
+
+.Edit-btn{
+  background-color: rgb(53, 149, 53);
+  width: auto;
+  color: white;
+}
+.Delete-btn{
+  background-color: rgb(165, 52, 52);
+  width: auto;
+  color: white;
+}
+
