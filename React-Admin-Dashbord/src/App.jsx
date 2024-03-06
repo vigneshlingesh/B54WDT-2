@@ -1,8 +1,9 @@
+// App.js
 import React from 'react';
 import './App.css';
 import './App2.css'
 import BookManagement from './BookManagement';
-import AuthorForm from './AuthForm';
+import AuthorManagement from './AuthorManagement';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <h1>Library store</h1>
       <div className="dashboard">
         <BookManagement />
-        <AuthorForm />
+        <AuthorManagement />
       </div>
     </div>
   );
