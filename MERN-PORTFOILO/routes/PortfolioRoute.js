@@ -11,7 +11,7 @@ const {
 router.get("/get-portfolio-data", async (req, res) => {
   try {
     const intros = await Intro.find();
-    const about = await About.find();
+    const abouts = await About.find();
     const projects = await Project.find();
     const contacts = await Contact.find();
     const experiences = await Experience.find();
@@ -19,7 +19,7 @@ router.get("/get-portfolio-data", async (req, res) => {
 
     res.status(200).send({
       intro: intros[0],
-      about: about[0],
+      about: abouts[0],
       projects: projects,
       contact: contacts,
       experiences: experiences,
