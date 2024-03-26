@@ -1,134 +1,141 @@
+
 const mongoose = require("mongoose");
 
 const introSchema = new mongoose.Schema({
   welcomeText: {
     type: String,
-    require: true,
+    required: true,
   },
-  fistName: {
+  firstName: {
     type: String,
-    require: true,
+    required: true,
   },
-
   lastName: {
     type: String,
-    require: true,
+    required: true,
   },
   caption: {
     type: String,
-    require: true,
+    required: true,
   },
   description: {
     type: String,
-    require: true,
+    required: true,
   },
 });
 
 const aboutSchema = new mongoose.Schema({
   lottieURL: {
     type: String,
-    require: true,
+    required: true,
   },
   description1: {
     type: String,
-    require: true,
+    required: true,
   },
   description2: {
     type: String,
-    require: true,
+    required: true,
   },
   skills: {
     type: Array,
-    require: true,
+    required: true,
   },
 });
 
 const experienceSchema = new mongoose.Schema({
-  roll: {
+  title: {
     type: String,
-    require: true,
+    required: true,
   },
   period: {
     type: String,
-    require: true,
+    required: true,
   },
   company: {
     type: String,
-    require: true,
+    required: true,
   },
   description: {
     type: String,
-    require: true,
+    required: true,
   },
 });
 
-const projectSchema = new mongoose.Schema({
+const projectsSchema = new mongoose.Schema({
   title: {
     type: String,
-    require: true,
+    required: true,
   },
   description: {
     type: String,
-    require: true,
+    required: true,
   },
   image: {
     type: String,
-    require: true,
+    required: true,
   },
   link: {
     type: String,
-    require: true,
+    required: true,
+  },
+  technolgies: {
+    type: Array,
+    required: true,
   },
 });
 
 const coursesSchema = new mongoose.Schema({
   title: {
     type: String,
-    require: true,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
   },
   image: {
     type: String,
-    require: true,
+    required: true,
   },
   link: {
     type: String,
-    require: true,
+    required: true,
   },
 });
 
 const contactSchema = new mongoose.Schema({
   name: {
     type: String,
-    require: true,
-  },
-  email: {
-    type: String,
-    require: true,
-  },
-  age: {
-    type: String,
-    require: true,
+    required: true,
   },
   gender: {
     type: String,
-    require: true,
+    required: true,
   },
-
+  email: {
+    type: String,
+    required: true,
+  },
   mobile: {
     type: String,
-    require: true,
+    required: true,
   },
-
-  country: {
+  age: {
     type: String,
-    require: true,
+    required: true,
+  },
+  address: {
+    type: String,
+    required: true,
   },
 });
+
 module.exports = {
   Intro: mongoose.model("intros", introSchema),
   About: mongoose.model("abouts", aboutSchema),
-  Experience: mongoose.model("experience", experienceSchema),
-  Project: mongoose.model("projects", projectSchema),
-  Course: mongoose.model("cources", coursesSchema),
+  Experience: mongoose.model("experiences", experienceSchema),
+  Project: mongoose.model("projects", projectsSchema),
+  Course: mongoose.model("courses", coursesSchema),
   Contact: mongoose.model("contacts", contactSchema),
 };

@@ -3,17 +3,17 @@ import React from "react";
 import { useSelector } from "react-redux";
 import SectionTitle from "../../components/SectionTitle";
 
-
-function Courses() {
-  const [selectedItemIndex , setSelectedItemIndex] = React.useState(0);
+function Projects() {
+  const [selectedItemIndex, setSelectedItemIndex] = React.useState(0);
   const { portfolioData } = useSelector((state) => state.root);
-  const { courses } = portfolioData;
+  const { projects } = portfolioData;
+
   return (
     <div>
-      <SectionTitle title="Courses" />
+      <SectionTitle title="Projects" />
       <div className="flex py-10 gap-20 sm:flex-col">
         <div className="flex flex-col gap-10 border-l-2 border-[#135e4c82] w-1/3 sm:flex-row sm:overflow-x-scroll sm:w-full">
-          {courses.map((course, index) => (
+          {projects.map((project, index) => (
             <div
               onClick={() => {
                 setSelectedItemIndex(index);
@@ -28,19 +28,25 @@ function Courses() {
                      : "text-white"
                  } `}
               >
-                {course.title}
+                {project.title}
               </h1>
             </div>
           ))}
         </div>
 
         <div className="flex items-center justify-center gap-10 sm:flex-col">
-         
+          <img
+            src={projects[selectedItemIndex].image}
+            alt=""
+            className="h-60 w-72"
+          />
           <div className="flex flex-col gap-5">
             <h1 className="text-secondary text-xl">
-              {courses[selectedItemIndex].title}
+              {projects[selectedItemIndex].title}
             </h1>
-
+            <p className="text-white">
+              {projects[selectedItemIndex].description}
+            </p>
             <p className="text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
               expedita accusantium nulla ad odio quisquam consequuntur
@@ -48,15 +54,10 @@ function Courses() {
               impedit ducimus corrupti ullam veniam error non.
             </p>
           </div>
-          <img
-            src={courses[selectedItemIndex].image}
-            alt=""
-            className="h-52 w-80"
-          />
         </div>
       </div>
     </div>
   );
 }
 
-export default Courses;
+export default Projects;

@@ -1,39 +1,36 @@
-import React from 'react'
-import Header from '../../components/Header'
-import intro from './Intro'
-import Intro from './Intro'
-import About from './About'
-import Expreiences from './Expreiences'
-import Project from './Project'
-import Courses from './Courses'
-import Contact from './Contact'
-import Footer from './Footer'
-import LeftSide from './LeftSide'
-import { useSelector } from 'react-redux'
 
+import React from "react";
+import { useSelector } from "react-redux";
+import Header from "../../components/Header";
+import About from "./About";
+import Contact from "./Contact";
+import Courses from "./Courses";
+import Experiences from "./Expreiences";
+import Footer from "./Footer";
+import Intro from "./Intro";
+import LeftSider from "./LeftSide";
+import Projects from "./Projects";
 
 function Home() {
-  const {portfolioData } = useSelector((state) => state.root);
-
+  const { portfolioData } = useSelector((state) => state.root);
   return (
     <div>
-   <Header />
-  {portfolioData &&(
-    <div className='bg-primary px-20 sm:px-5'> 
-    <Intro /> 
-    <About />
-    <Expreiences  />
-    <Project />
-    <Courses />
-    <Contact />
-    <Footer />
-    <LeftSide />
+      <Header />
+
+      {portfolioData && (
+        <div className="bg-primary px-40 sm:px-5">
+          <Intro />
+          <About />
+          <Experiences />
+          <Projects />
+          <Courses />
+          <Contact />
+          <Footer />
+          <LeftSider />
+        </div>
+      )}
     </div>
-  )}
-   
-   
-    </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
