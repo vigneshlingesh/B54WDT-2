@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const dbConfig = require("./config/dbConfig");
+const dbConig = require("./config/dbConig");
 
 const portfolioRoute = require("./routes/PortfolioRoute");
 
